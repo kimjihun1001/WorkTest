@@ -1,0 +1,92 @@
+/* font-family: 'Gothic A1', sans-serif;
+font-family: 'Gowun Batang', serif; */
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: beige;
+    width: 375px;
+    height: 812px;
+    margin: auto;
+    border: black 2px solid;
+    font-family: 'Gothic A1', sans-serif;
+    /* background: no-repeat center/50% url(img/download.jpeg); */
+}
+
+div {
+    display: table; margin-left: auto; margin-right: auto;
+}
+
+img {
+    display: table; margin-left: auto; margin-right: auto;
+    width:350px;
+}
+
+.logo {
+    align: left;
+}
+
+.logo img {
+    width: 100px;
+}
+.start-image {
+    width: 300px;
+}
+
+.progress {
+    width: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    width: 350px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 20px;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+p {
+    display: table; margin-left: auto; margin-right: auto;
+}
+
+button {
+    border-radius: 20px;
+    border: black 2px solid;
+    color: black;
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    align-items: flex-start;
+    margin: 10px auto;
+    transition: background-color .5s;
+    font-family: 'Gothic A1', sans-serif;
+    width: 350px;
+}
+
+.on-mouseenter {
+    background-color: black;
+    color: white;
+    transition: color .5s;
+    transition: background-color .5s;
+}
+
+.start-button {
+    background-color: #261e1c;
+    color: white;
+}
+
+.next-button {
+    background-color: #261e1c;
+    color: white;
+}
