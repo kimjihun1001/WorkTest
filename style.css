@@ -25,7 +25,7 @@ img {
 }
 
 .logo {
-    align: left;
+    float: left;
 }
 
 .logo img {
@@ -84,9 +84,14 @@ button {
 .start-button {
     background-color: #261e1c;
     color: white;
+    margin-bottom: 50px;
 }
 
 .next-button {
     background-color: #261e1c;
     color: white;
+}
+
+.copyright {
+    color: lightgray;
 }

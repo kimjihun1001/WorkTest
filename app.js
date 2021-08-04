@@ -1,11 +1,8 @@
 const div = document.querySelectorAll(".question");
 const div1 = document.querySelector(".start-page");
 const div2 = document.querySelector(".first-page");
+const div21 = document.querySelector(".page20");
 const ans = document.querySelectorAll(".b");
-const ans11 = document.querySelector(".button11");
-const ans12 = document.querySelector(".button12");
-const ans21 = document.querySelector(".button21");
-const ans22 = document.querySelector(".button22");
 const startButton = document.querySelector(".start-button");
 
 let A = 0;
@@ -39,15 +36,19 @@ function onMouse() {
     this.classList.toggle("on-mouseenter");
 }
 
-// ans.addEventListener("mouseenter",onMouse);
+for(let i = 0; i < ans.length; i++) {
+    ans[i].addEventListener("mouseenter",onMouse);
+    ans[i].addEventListener("mouseleave",onMouse);
+    ans[i].addEventListener("click",click);
+}
 
-// ans.forEach(addEventListener("mouseenter",onMouse));
-// ans.forEach(addEventListener("mouseleave",onMouse));
-ans11.addEventListener("mouseenter",onMouse);
-ans11.addEventListener("mouseleave",onMouse);
-ans12.addEventListener("mouseenter",onMouse);
-ans12.addEventListener("mouseleave",onMouse);
+// Q. while로 하면 11번 쯤부터 에러남... 왜 그러는 걸까... 그냥 for문 써야겠다
+// let i = 0;
+// while (i < 20) {
+//     ans[i].addEventListener("mouseenter",onMouse);
+//     ans[i].addEventListener("mouseleave",onMouse);
+//     ans[i].addEventListener("click",click);
+//     i = i + 1;
+// }
 
-ans11.addEventListener("click",click);
-ans12.addEventListener("click",click);
 startButton.addEventListener("click", goToNext);

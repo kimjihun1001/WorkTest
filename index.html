@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Gowun+Batang:wght@400;700&display=swap');
     </style>
-    <title>Document</title>
+    <title>나의 업보다</title>
 </head>
 <body>
     <div class="whole">
@@ -17,28 +19,271 @@
                 <img src="img/logo.png" alt="Logo">
             </div>
             <img class="start-image" src="img/KakaoTalk_Photo_2021-07-30-10-56-48.gif" alt="">
-            <h1>나는 어떻게 일해야 좋을까?</h1>
+            <h1>나는 어떻게 일하고 있을까?</h1>
             <h2>하루 일과로 알아보는 업무 유형 테스트</h2>
             <button class="start-button">Start</button>
+            <p class="copyright">© 2021 일머리(1meory). All Rights Reserved.</p>
         </div>
         <div class="question first-page hidden">
             <img class="progress" src="img/bg_paging_on.png">
             <p>1/20</p>
             <img src="img/img01.png">
             <p>09:30 AM</p>
-            <h1>주말 끝. 출근시작! 회사에 도착한 당신은</h1>
+            <h1>주말 끝. 출근시!작! 회사에 도착한 후, 나는 가장 먼저</h1>
             <button class="b button11" name="0">"주말에 뭐하셨어요?" 주위 사람들 근황을 물어보며 하루를 시작한다</button>
             <button class="b button12" name="0">이번 주 할 일을 정리하면서 하루를 시작한다</button>
             <!-- <button class="next-button">다음</button> -->
         </div>
-        <div class="question second-page hidden">
+        <div class="question 2-page hidden">
             <img class="progress" src="img/bg_paging_on.png">
             <p>2/20</p>
-            <img src="img/img01.png">
+            <img src="img/img02.png">
             <p>10:00 AM</p>
-            <h1>동료의 개인적 사정으로 진행하려고 했던 단기 프로젝트 업무를 내가 인계받게 되었다. 새로 할 업무내용을 인수인계 받을 경우</h1>
-            <button class="b button21" name="1">최대한 디테일하게 안내를 해주는 동료가 더 좋다</button>
-            <button class="b button22" name="1">업무에 대해서 대략적으로 들어보고, 궁금한 점에 대해 물어보라는 동료가 더 좋다</button>
+            <h1>동료의 개인적 사정으로 진행하려고 했던 단기 프로젝트 업무를 내가 인계받게 되었다. 프로젝트 관련하여 모르는 내용에 대해 나는
+            </h1>
+            <button class="b button21" name="1">이전 담당자인 동료에게 상세한 안내를 요청한다.
+            </button>
+            <button class="b button22" name="1">관련 공문이나 파일을 먼저 찾아보며 일단 스스로 궁금한 점을 해결해보려 한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 3-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>3/20</p>
+            <img src="img/img03.png">
+            <p>10:30 AM</p>
+            <h1>새로운 프로젝트 지시가 내려왔을 때, 프로젝트에 대한 내용을 들으면서 나는
+            </h1>
+            <button class="b button31" name="2">해당 프로그램의 로드맵(추진 및 소요 일정, 과업)이 그려진다.
+            </button>
+            <button class="b button32" name="2">해당 프로그램에서 실행하면 좋은 솔루션에 대해 떠오른다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 4-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>4/20</p>
+            <img src="img/img04.png">
+            <p>11:00 AM</p>
+            <h1>프로젝트에서 나는 팀장을 맡아 팀원들을 이끌어가야 되는 상황이다. 나는 프로젝트를 잘 수행할 수 있게
+            </h1>
+            <button class="b button41" name="3">참고할 수 있는 유사 프로젝트가 기존에 있을 때 더 잘 진행할 수 있다.
+            </button>
+            <button class="b button42" name="3">자율적으로 내 역량을 발휘 할 수 있는 새로운 프로젝트에서 더 잘 진행할 수 있다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 5-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>5/20</p>
+            <img src="img/img05.png">
+            <p>15:00 PM</p>
+            <h1>장시간 팀 회의를 하였더니 피곤하고 집중이 잘 안 된다. 아직 회의 결론이 나지 않았다. 그때 나는
+            </h1>
+            <button class="b button21" name="4">잠시 쉬는 시간을 가진 후 회의에 다시 한다. 
+            </button>
+            <button class="b button22" name="4">회의를 빠르게 마치고 퇴근할 수 있도록 휴식 없이 회의를 계속 진행한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 6-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>6/20</p>
+            <img src="img/img06.png">
+            <p>17:05 PM</p>
+            <h1>오늘 오후 5시까지 팀원에게 프로젝트 자료를 받기로 했다. 5시 5분 팀원이 감감무소식이다. 
+            </h1>
+            <button class="b button21" name="5">바로 찾아서 가서 업무를 다했는지 물어본다. 
+            </button>
+            <button class="b button22" name="5">퇴근이 1시간 남았으니 일단 퇴근시간까지 기다려본다. 
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 7-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>7/20</p>
+            <img src="img/img07.png">
+            <p>18:00 PM</p>
+            <h1>결국 오늘까지 마감해야하는 업무가 밀려 정시 퇴근은 물 건너갔다. 칼퇴를 하지 못한 나는
+            </h1>
+            <button class="b button21" name="6">먼저 담배를 한 대를 태우든, 밥을 먹든, 잠시 쉬고 다시 일에 집중한다. 
+            </button>
+            <button class="b button22" name="6">쉬는 것은 일단 미루고, 일을 빨리 끝나는 것을 우선으로 한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 8-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>8/20</p>
+            <img src="img/img08.png">
+            <p>21:00 PM</p>
+            <h1>드디어 퇴근이다. 집에 도착하여 씻고, 밥 먹고, 편하게 9시 뉴스를 보면서 쉬려던 차에 팀 단톡방에 ‘카톡!’하고 핸드폰이 울린다. 이때 나는
+            </h1>
+            <button class="b button21" name="7">‘퇴근 시간에 무슨 업무야‘, 급한 일이 아닌 것을 확인 후 다음날 회사 가서 답장한다,
+            </button>
+            <button class="b button22" name="7">시간을 많이 잡지 않는 일이면 확인 후 답변한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 9-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>9/20</p>
+            <img src="img/img09.png">
+            <p>09:00 AM</p>
+            <h1>다음날 출근하자마자 상사가 갑작스럽게 00시장 조사 업무를 지시하여 오늘 오전 내로 내용을 보고한다고 하였다. 상사는 업무 지시 후 바로 출장을 가서 물어볼 수 없다. 이때 나의 조사 방식은
+            </h1>
+            <button class="b button21" name="8">넓은 범위로 조사하여 다양한 범위가 들어간 아웃풋을 낸다
+            </button>
+            <button class="b button22" name="8">어떤 게 필요한지 구체적으로 짜본 후 자세한 내용이 들어간 아웃풋을 낸다
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 10-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>10/20</p>
+            <img src="img/img10.png">
+            <p>12:00 AM</p>
+            <h1>두근두근! 점심시간을 위해 오전을 달려왔다! 점심으로 도시락을 챙겼는데 동료들이 같이 나가서 밥을 먹자고 한다. 
+            </h1>
+            <button class="b button21" name="9">도시락은 내일 먹을 수 있으니 냉장고에 보관하고 같이 나가서 먹는다.
+            </button>
+            <button class="b button22" name="9">도시락을 챙겨서 아쉽지만 다음에 먹자고 한다. 
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 11-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>11/20</p>
+            <img src="img/img11.png">
+            <p>14:00 PM</p>
+            <h1>오후시간, 부서 예산 배정으로 한판 크게 싸웠던 사이가 좋지 않던 타부서 사람과 함께 협업을 하게 되었다. 내가 아닌 다른 사람이 본 업무를 담당할 수 있는 상황에서 나는
+            </h1>
+            <button class="b button111" name="10">도저히 이 사람과 일을 못 하겠다. 상사에게 요청하거나/동료에게 부탁하여 업무를 교체한다. 
+            </button>
+            <button class="b button112" name="10">공은 공 사는 사, 비즈니스 관계를 유지하면서 협업한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 12-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>12/20</p>
+            <img src="img/img12.png">
+            <p>15:00 PM</p>
+            <h1>금일 워크숍 행사에 필요한 물품비용에 대해 누가 물어볼 때 나는 어떻게 대답하는가?
+            </h1>
+            <button class="b button21" name="11">행사 예산안을 떠올리며 전체적으로 대략 얼마가 필요한지 수치를 말한다.
+            </button>
+            <button class="b button22" name="11">행사 예산안을 다시 한번 확인한 후, 각각 비목마다의 정확한 수치를 알려준다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 13-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>13/20</p>
+            <img src="img/img13.png">
+            <p>15:30 AM</p>
+            <h1>이제 프로젝트 보고서를 작성하여야 한다. 나의 보고서 작성 스타일은? 
+            </h1>
+            <button class="b button21" name="12">목차, 초안 대강대강 짜서 틀을 먼저 완성한다.
+            </button>
+            <button class="b button22" name="12">순서대로 앞에 내용을 다 작성 후 뒤에 내용을 작성한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 14-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>14/20</p>
+            <img src="img/img14.png">
+            <p>16:00 PM</p>
+            <h1>최종보고를 약 한 달 남긴 중간보고 때, 열심히 진행한 프로젝트를 다시 해오라는 피드백을 받게 되었다. 이때 나는
+            </h1>
+            <button class="b button21" name="13">피드백에 대해 납득이 안 되는 부분은 물어봐야 직성이 풀린다.
+            </button>
+            <button class="b button22" name="13">피드백이 납득이 안 되어도 우선 감정적인 부분은 억누르고 수정할 부분을 정리해본다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 15-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>15/20</p>
+            <img src="img/img15.png">
+            <p>16:30 PM</p>
+            <h1>중간보고에서 부족한 부분을 보완한 후, 최종 결과보고를 진행하기 이틀 전이다. 많이 보완하였다고 생각했는데 예상한 성과가 나오지 않고 있다. 그 원인에 대해 나는
+            </h1>
+            <button class="b button21" name="14">프로젝트 전체 흐름을 크게 그려보며 원인을 찾으려 한다.
+            </button>
+            <button class="b button22" name="14">타겟팅, 홍보 방식, 예산 등 특정 부분을 분석하며 원인을 찾으려 한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 16-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>16/20</p>
+            <img src="img/img16.png">
+            <p>18:00 PM</p>
+            <h1>불금이다. 프로젝트가 끝난 뒤에는 TF팀 해산으로 각자의 부서로 돌아가기 전 같이 회식을 갔다. 술자리에서 나는 
+            </h1>
+            <button class="b button21" name="15">퇴근 후 일 얘기는 NONO! 퇴근 후에는 일에서 벗어나 회식자리를 즐긴다.
+            </button>
+            <button class="b button22" name="15">프로젝트 때 기억에 남는 재밌는 혹은 아쉬웠던 에피소드를 말하며 회식자리를 즐긴다. 
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 17-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>17/20</p>
+            <img src="img/img17.png">
+            <p>10:00 AM</p>
+            <h1>주말에 자기계발을 하려고 한다. 내가 선호하는 활동은
+            </h1>
+            <button class="b button171" name="16">평소에 관심이 있었던 공방, 베이킹, 운동 등 취미나 휴식활동
+            </button>
+            <button class="b button172" name="16">내 일과 관련된 유튜브 시청이나 온라인 매거진, 책 보기
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 18-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>18/20</p>
+            <img src="img/img18.png">
+            <p>10:00 AM</p>
+            <h1>나의 커리어 향상을 위해 자격증 공부를 할 때, 나는
+            </h1>
+            <button class="b button171" name="17">누군가와 함께 공부할 때 시너지가 배가 되기에 스터디에 참여한다.
+            </button>
+            <button class="b button172" name="17">인강(유튜브, 강의 등)을 알아보거나 책을 사서 혼자 공부계획을 짠다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 19-page hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>19/20</p>
+            <img src="img/img19.png">
+            <p>10:00 AM</p>
+            <h1>여름 휴가시즌이다. 프로젝트를 끝낸 후 여유가 생긴 나는 연차를 사용할 때,
+            </h1>
+            <button class="b button171" name="18">재충전을 위해 주말과 함께 연차를 활용하여 몰아서 쉬고 온다.
+            </button>
+            <button class="b button172" name="18">한번에 몰아쉬면 다시 출근하기 피곤하기에, 여러 번의 조퇴(반차)로 사용한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question page20 hidden">
+            <img class="progress" src="img/bg_paging_on.png">
+            <p>20/20</p>
+            <img src="img/img20.png">
+            <p>10:00 AM</p>
+            <h1>혼자만의 여유로운 여행을 가게 되었다. 나는
+            </h1>
+            <button class="b button171" name="19">여행을 가면 분위기에 취해 온전히 여행을 즐긴다. 
+            </button>
+            <button class="b button172" name="19">여행을 즐기다 보면 일과 관련된 영감을 얻고는 한다.
+            </button>
+            <!-- <button class="next-button">다음</button> -->
+        </div>
+        <div class="question 21-page hidden">
+            <h1>끝
+            </h1>
             <!-- <button class="next-button">다음</button> -->
         </div>
 
