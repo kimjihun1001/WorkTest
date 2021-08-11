@@ -11,6 +11,16 @@ const startButton = document.querySelector(".start-button");
 
 const body = document.querySelector("body");
 
+let backgroundList = [];
+for(let i = 1; i <= 20; i++) {
+    backgroundList.push("background" + i);
+}
+
+let buttonList = [];
+for(let i = 1; i <= 20; i++) {
+    buttonList.push("button" + i);
+}
+
 let A = 0;
 let B = 0;
 let C = 0;
@@ -30,6 +40,7 @@ localStorage.setItem("큰그림",G);
 localStorage.setItem("디테일",H);
 
 function click() {
+    console.log(this.className);
     // DIV hidden 처리
     if (this.name !== '19') {
         div[Number(this.name)].classList.toggle("hidden");
@@ -41,25 +52,31 @@ function click() {
         setTimeout(showResult, 1000);
     }
 
-    // DIV 배경색 설정
-    if (this.name == '6') {
-        body.classList.toggle("background7");
-        ans[14].classList.toggle("button7");
-        ans[15].classList.toggle("button7");
-    } else if (this.name == '7') {
-        body.classList.toggle("background7");
-    } else if (this.name == '17') {
-        body.classList.toggle("background19");
-        ans[36].classList.toggle("button19");
-        ans[37].classList.toggle("button19");
-    } else if (this.name == '18') {
-        body.classList.toggle("background20");
-        ans[38].classList.toggle("button20");
-        ans[39].classList.toggle("button20");
-    } else if (this.name == '19') {
-        body.classList.toggle("background20");
-    } else {
-    }
+    // DIV 배경색 설정 아우 헷갈려 ㅎㅎ...
+        let i = Number(this.name);
+        body.classList.toggle(backgroundList[i+1]);
+        ans[(i+1)*2].classList.toggle(buttonList[i+1]);
+        ans[(i+1)*2+1].classList.toggle(buttonList[i+1]);
+
+    // 이렇게 하려면 너무 중복돼서 백그라운드, 버튼 배열 만들고 반복문으로 채워넣기. 그리고 위 코드로 대체
+    // if (this.name == '6') {
+    //     body.classList.toggle("background7");
+    //     ans[14].classList.toggle("button7");
+    //     ans[15].classList.toggle("button7");
+    // } else if (this.name == '7') {
+    //     body.classList.toggle("background7");
+    // } else if (this.name == '17') {
+    //     body.classList.toggle("background18");
+    //     ans[36].classList.toggle("button18");
+    //     ans[37].classList.toggle("button18");
+    // } else if (this.name == '18') {
+    //     body.classList.toggle("background19");
+    //     ans[38].classList.toggle("button19");
+    //     ans[39].classList.toggle("button19");
+    // } else if (this.name == '19') {
+    //     body.classList.toggle("background19");
+    // } else {
+    // }
 
     // 점수 카운트
     if (this.id == 'A') {
@@ -89,10 +106,15 @@ function click() {
     }
 }
 
-function goToNext() {
-    console.log("Go to next page");
+function start() {
+    console.log("Start test");
     div1.classList.toggle("hidden");
     div2.classList.toggle("hidden");
+
+    // 색 변경
+    body.classList.toggle(backgroundList[0]);
+    ans[0].classList.toggle(buttonList[0]);
+    ans[1].classList.toggle(buttonList[0]);
 }
 
 function onMouse() {
@@ -181,4 +203,10 @@ function showResult () {
     }
 }
 
-startButton.addEventListener("click", goToNext);
+startButton.addEventListener("click", start);
+
+// let data = [A,B,C,D,E,F,G,H];
+
+// function sendData() {
+
+// }

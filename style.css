@@ -8,7 +8,7 @@ font-family: 'Gowun Batang', serif; */
 body {
     background-color: #eeeac0;
     width: 375px;
-    height: 812px;
+    height: 700px;
     margin: auto;
     border: black 2px solid;
     font-family: 'Gothic A1', sans-serif;
@@ -41,7 +41,7 @@ img {
 }
 
 .loading {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 h1 {
@@ -65,7 +65,7 @@ h2 {
     text-align: center;
 }
 p {
-    display: table; margin-left: auto; margin-right: auto;
+    display: table; margin-left: auto; margin-right: auto; margin-top: 5px; margin-bottom: 5px;
 }
 
 button {
@@ -86,8 +86,6 @@ button {
     width: 350px;
 }
 
-
-
 .start-button {
     background-color: #4D7960;
     border: #4D7960;
@@ -104,31 +102,204 @@ button {
     color: lightgray;
 }
 
-.button19 {
-    background-color: #95b9f4;
+.button1 {
+    background-color: lightyellow;
+    transition: background-color .5s;
 }
 
-.background19 {
-    background-color: #95b9f4;
-    transition: background-color 1s;
+.background1 {
+    background-color: lightyellow;
+    transition: background-color .5s;
 }
 
-.button20 {
-    background-color: #bad1fb;
+.button2 {
+    background-color: #786a78;
+    transition: background-color .5s;
 }
 
-.background20 {
-    background-color: #bad1fb;
-    transition: background-color 1s;
+.background2 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button3 {
+    background-color: #f8cbf8;
+    transition: background-color .5s;
+}
+
+.background3 {
+    background-color: #f8cbf8;
+    transition: background-color .5s;
+}
+
+.button4 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background4 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button5 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background5 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button6 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background6 {
+    background-color: #786a78;
+    transition: background-color .5s;
 }
 
 .button7 {
     background-color: #786a78;
+    transition: background-color .5s;
 }
 
 .background7 {
     background-color: #786a78;
-    transition: background-color 1s;
+    transition: background-color .5s;
+}
+
+.button8 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background8 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button9 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background9 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button10 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background10 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button11 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background11 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button12 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background12 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button13 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background13 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button14 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background14 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button15 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background15 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button16 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background16 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button17 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.background17 {
+    background-color: #786a78;
+    transition: background-color .5s;
+}
+
+.button18 {
+    background-color: #95b9f4;
+    transition: background-color .5s;
+}
+
+.background18 {
+    background-color: #95b9f4;
+    transition: background-color .5s;
+}
+
+.button19 {
+    background-color: #bad1fb;
+    transition: background-color .5s;
+}
+
+.background19 {
+    background-color: #bad1fb;
+    transition: background-color .5s;
+}
+
+.button20 {
+    background-color: #bad1fb;
+    transition: background-color .5s;
+}
+
+.background20 {
+    background-color: #bad1fb;
+    transition: background-color .5s;
 }
 
 .on-mouseenter {
