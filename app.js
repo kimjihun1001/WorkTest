@@ -12,13 +12,13 @@ const startButton = document.querySelector(".start-button");
 const body = document.querySelector("body");
 
 let backgroundList = [];
-for(let i = 1; i <= 20; i++) {
-    backgroundList.push("background" + i);
+for(let a = 1; a <= 20; a++) {
+    backgroundList.push("background" + a);
 }
 
 let buttonList = [];
-for(let i = 1; i <= 20; i++) {
-    buttonList.push("button" + i);
+for(let b = 1; b <= 20; b++) {
+    buttonList.push("button" + b);
 }
 
 let A = 0;
@@ -40,23 +40,23 @@ localStorage.setItem("큰그림",G);
 localStorage.setItem("디테일",H);
 
 function click() {
-    console.log(this.className);
+    console.log(this.name);
+    console.log(Number(this.name));
     // DIV hidden 처리
     if (this.name !== '19') {
         div[Number(this.name)].classList.toggle("hidden");
         div[Number(this.name)+1].classList.toggle("hidden");
+        let j = Number(this.name);
+        body.classList.toggle(backgroundList[j+1]);
+        ans[(j+1)*2].classList.toggle(buttonList[j+1]);
+        ans[(j+1)*2+1].classList.toggle(buttonList[j+1]);
     } else {
         div[Number(this.name)].classList.toggle("hidden");
         divLoading.classList.toggle("hidden");
-        body.classList.toggle("background20");
+        let j = Number(this.name);
+        body.classList.toggle(backgroundList[j]);   // 변경해야함
         setTimeout(showResult, 1000);
     }
-
-    // DIV 배경색 설정 아우 헷갈려 ㅎㅎ...
-        let i = Number(this.name);
-        body.classList.toggle(backgroundList[i+1]);
-        ans[(i+1)*2].classList.toggle(buttonList[i+1]);
-        ans[(i+1)*2+1].classList.toggle(buttonList[i+1]);
 
     // 이렇게 하려면 너무 중복돼서 백그라운드, 버튼 배열 만들고 반복문으로 채워넣기. 그리고 위 코드로 대체
     // if (this.name == '6') {
