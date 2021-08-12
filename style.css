@@ -1,18 +1,52 @@
 /* font-family: 'Gothic A1', sans-serif;
 font-family: 'Gowun Batang', serif; */
 
-.hidden {
-    display: none;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
-    background-color: #eeeac0;
+    background-color: #EEEAC0;
     width: 375px;
-    height: 700px;
+    height: 650px;
     margin: auto;
     border: black 2px solid;
     font-family: 'Gothic A1', sans-serif;
     /* background: no-repeat center/50% url(img/download.jpeg); */
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows: 100px 500px 50px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows: 20px 580px 50px;
 }
 
 div {
@@ -21,49 +55,86 @@ div {
 
 img {
     display: table; margin-left: auto; margin-right: auto;
-    width:300px;
+    width:246.5px;
     pointer-events : none;
 }
 
 .logo {
-    float: left;
+    /* float: left; */
+    display: grid;
+    grid-template-columns: 80px 190px 80px;
+    grid-template-rows: 80px 20px;
 }
 
 .logo img {
-    width: 100px;
+    width: 80px;
+    grid-column: 1;
+    grid-row: 1;
 }
+
+.logo p {
+    font-weight: 800;
+    color: #95BDA6;
+    font-size: 14px;
+    margin-top: 0px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.logo a {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.logo a > img {
+    width: 50px;
+    margin-top: 15px;
+}
+
 .start-image {
-    width: 300px;
+    width: 246.5px;
+    margin-top: 30px;
 }
 
-.progress {
-    width: 20px;
-}
-
-.loading {
-    margin-top: 50px;
-}
-
-h1 {
-    font-size: 20px;
+.start-page h1 {
+    font-size: 24px;
     width: 350px;
+    font-weight: 900;
+    color: #4D7960;
     margin: auto;
     text-align: center;
 }
 
-.title {
-    font-size: 28px;
-    color: #4D7960;
-}
-
-h2 {
-    font-size: 20px;
-    width: 350px;
+.start-page h2 {
+    font-size: 14px;
+    width: 300px;
+    color: black;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 50px;
     text-align: center;
 }
+
+.progress-bar {
+    margin-top: 5px;
+}
+
+.progress-bar > .outside {
+    width: 330px;
+    height: 12px;
+    border: black 1px solid;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.progress-bar > .outside > .inside {
+    width: 15px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #95BDA6;
+    margin: 1px;
+}
+
 p {
     display: table; margin-left: auto; margin-right: auto; margin-top: 5px; margin-bottom: 5px;
 }
@@ -73,24 +144,30 @@ button {
     border: black 2px solid;
     color: black;
     background-color: #eeeac0;
-    padding: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     display: block;
     cursor: pointer;
     align-items: flex-start;
+    padding: 20px;
     margin: 10px auto;
     transition: background-color .5s;
-    font-family: 'Gothic A1', sans-serif;
-    width: 350px;
+    width: 340px;
+    height: 80px;
+
 }
 
 .start-button {
+    border-radius: 26px;
     background-color: #4D7960;
     border: #4D7960;
     color: white;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 18px;
     margin-bottom: 50px;
+    height: 60px;
 }
 
 .next-button {
@@ -99,156 +176,172 @@ button {
 }
 
 .copyright {
-    color: lightgray;
+    color: gray;
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.question {
+    background-image: url(img/bg.png);
+    background-position-x: 35px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+
+.loading {
+    margin-top: 50px;
 }
 
 .button1 {
-    background-color: lightyellow;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .background1 {
-    background-color: lightyellow;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .button2 {
-    background-color: #786a78;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .background2 {
-    background-color: #786a78;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .button3 {
-    background-color: #f8cbf8;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .background3 {
-    background-color: #f8cbf8;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .button4 {
-    background-color: #786a78;
+    background-color: #FFFEB0;
     transition: background-color .5s;
 }
 
 .background4 {
-    background-color: #786a78;
+    background-color: #FFFEB0;
     transition: background-color .5s;
 }
 
 .button5 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .background5 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .button6 {
-    background-color: #786a78;
+    background-color: #DEDFA6;
     transition: background-color .5s;
 }
 
 .background6 {
-    background-color: #786a78;
+    background-color: #DEDFA6;
     transition: background-color .5s;
 }
 
 .button7 {
-    background-color: #786a78;
+    background-color: #AEAE7C;
     transition: background-color .5s;
 }
 
 .background7 {
-    background-color: #786a78;
+    background-color: #AEAE7C;
     transition: background-color .5s;
 }
 
 .button8 {
-    background-color: #786a78;
+    background-color: #786A78;
     transition: background-color .5s;
 }
 
 .background8 {
-    background-color: #786a78;
+    background-color: #786A78;
     transition: background-color .5s;
 }
 
 .button9 {
-    background-color: #786a78;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .background9 {
-    background-color: #786a78;
+    background-color: #FEFFE0;
     transition: background-color .5s;
 }
 
 .button10 {
-    background-color: #786a78;
+    background-color: #FFFEB0;
     transition: background-color .5s;
 }
 
 .background10 {
-    background-color: #786a78;
+    background-color: #FFFEB0;
     transition: background-color .5s;
 }
 
 .button11 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .background11 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .button12 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .background12 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .button13 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .background13 {
-    background-color: #786a78;
+    background-color: #EEEAC0;
     transition: background-color .5s;
 }
 
 .button14 {
-    background-color: #786a78;
+    background-color: #DEDFA6;
     transition: background-color .5s;
 }
 
 .background14 {
-    background-color: #786a78;
+    background-color: #DEDFA6;
     transition: background-color .5s;
 }
 
 .button15 {
-    background-color: #786a78;
+    background-color: #DEDFA6;
     transition: background-color .5s;
 }
 
 .background15 {
-    background-color: #786a78;
+    background-color: #DEDFA6;
     transition: background-color .5s;
 }
 
@@ -263,22 +356,22 @@ button {
 }
 
 .button17 {
-    background-color: #786a78;
+    background-color: #BAD1FB;
     transition: background-color .5s;
 }
 
 .background17 {
-    background-color: #786a78;
+    background-color: #BAD1FB;
     transition: background-color .5s;
 }
 
 .button18 {
-    background-color: #95b9f4;
+    background-color: #BAD1FB;
     transition: background-color .5s;
 }
 
 .background18 {
-    background-color: #95b9f4;
+    background-color: #BAD1FB;
     transition: background-color .5s;
 }
 
@@ -302,9 +395,23 @@ button {
     transition: background-color .5s;
 }
 
+.background-loading {
+    background-color: #95B9F4;
+    transition: background-color .5s;
+}
+
+.background-result {
+    background-color: #95BDA6;
+    transition: background-color .5s;
+}
+
 .on-mouseenter {
     background-color: black;
     color: white;
     transition: color .5s;
     transition: background-color .5s;
+}
+
+.hidden {
+    display: none;
 }

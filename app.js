@@ -1,6 +1,13 @@
+const whole = document.querySelector(".whole");
+
 const div = document.querySelectorAll(".question");
 const div1 = document.querySelector(".start-page");
 const div2 = document.querySelector(".first-page");
+
+const logo = document.querySelector(".logo");
+
+const progressBar = document.querySelector(".progress-bar")
+const progress = document.querySelector(".inside");
 
 const divLoading = document.querySelector("div .loading");
 
@@ -42,6 +49,8 @@ localStorage.setItem("디테일",H);
 function click() {
     console.log(this.name);
     console.log(Number(this.name));
+    let width = String((Number(this.name)+2)*15) + 'px';
+    progress.style.width = width;
     // DIV hidden 처리
     if (this.name !== '19') {
         div[Number(this.name)].classList.toggle("hidden");
@@ -53,8 +62,7 @@ function click() {
     } else {
         div[Number(this.name)].classList.toggle("hidden");
         divLoading.classList.toggle("hidden");
-        let j = Number(this.name);
-        body.classList.toggle(backgroundList[j]);   // 변경해야함
+        body.classList.toggle("background-loading");
         setTimeout(showResult, 1000);
     }
 
@@ -111,6 +119,15 @@ function start() {
     div1.classList.toggle("hidden");
     div2.classList.toggle("hidden");
 
+    whole.classList.remove("grid1");
+    whole.classList.add("grid2");
+    
+    // 상단 로고 없애기
+    logo.classList.add("hidden");
+
+    // 진행바 나타내기
+    progressBar.classList.remove("hidden");
+
     // 색 변경
     body.classList.toggle(backgroundList[0]);
     ans[0].classList.toggle(buttonList[0]);
@@ -140,6 +157,7 @@ for(let i = 0; i < ans.length; i++) {
 // 결과 DIV
 function showResult () {
     divLoading.classList.toggle("hidden");
+    body.classList.toggle("background-result");
     if (A > B) {
         if (C > D) {
             if (E > F) {
