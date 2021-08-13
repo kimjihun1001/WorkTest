@@ -8,6 +8,7 @@ const logo = document.querySelector(".logo");
 
 const progressBar = document.querySelector(".progress-bar")
 const progress = document.querySelector(".inside");
+const thisPage = document.querySelector(".this-page");
 
 const divLoading = document.querySelector("div .loading");
 
@@ -49,8 +50,13 @@ localStorage.setItem("디테일",H);
 function click() {
     console.log(this.name);
     console.log(Number(this.name));
-    let width = String((Number(this.name)+2)*15) + 'px';
+
+    // progress bar
+    let width = String((Number(this.name)+2)*16.4) + 'px';
     progress.style.width = width;
+    progress.style.animation = "a"+String(Number(this.name)+2)+" 1s ease-in-out 1" ;
+    thisPage.innerHTML = String(Number(this.name)+2);
+
     // DIV hidden 처리
     if (this.name !== '19') {
         div[Number(this.name)].classList.toggle("hidden");
@@ -61,6 +67,7 @@ function click() {
         ans[(j+1)*2+1].classList.toggle(buttonList[j+1]);
     } else {
         div[Number(this.name)].classList.toggle("hidden");
+        progressBar.classList.toggle("hidden");
         divLoading.classList.toggle("hidden");
         body.classList.toggle("background-loading");
         setTimeout(showResult, 1000);
@@ -155,9 +162,14 @@ for(let i = 0; i < ans.length; i++) {
 // }
 
 // 결과 DIV
+
 function showResult () {
     divLoading.classList.toggle("hidden");
     body.classList.toggle("background-result");
+    body.classList.toggle("body2");
+    whole.classList.remove("grid1");
+    whole.classList.remove("grid2");
+    whole.classList.add("grid3");
     if (A > B) {
         if (C > D) {
             if (E > F) {
