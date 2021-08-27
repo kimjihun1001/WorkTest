@@ -39,14 +39,14 @@ time, mark, audio, video {
 .body2 {
     background-color: #EEEAC0;
     width: 375px;
-    height: 1800px;
+    height: 1650px;
     margin: auto;
     border: black 2px solid;
     font-family: 'Gothic A1', sans-serif;
 }
 
 .grid1 {
-    display: grid;
+    display: grid;ㄴ
     grid-template-columns: 375px;
     grid-template-rows: 100px 515px 35px;
 }
@@ -60,13 +60,13 @@ time, mark, audio, video {
 .grid3 {
     display: grid;
     grid-template-columns: 375px;
-    grid-template-rows: 1765px 35px;
+    grid-template-rows: 1615px 35px;
 }
 
 .result {
     display: grid;
     grid-template-columns: 350px;
-    grid-template-rows: 50px 100px 300px 300px 100px 100px 300px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px 300px 250px 150px 300px 100px 100px 100px 100px 100px;
 }
 
 div {
@@ -75,7 +75,7 @@ div {
 
 img {
     display: table; margin-left: auto; margin-right: auto;
-    width:280px;
+    width:250px;
     pointer-events : none;
 }
 
@@ -100,6 +100,7 @@ img {
     margin-top: 0px;
     grid-column: 1;
     grid-row: 2;
+    text-align: center;
 }
 
 .logo a {
@@ -161,6 +162,7 @@ img {
     font-size: 12px;
     font-weight: 500;
     margin-top: 10px;
+    text-align: center;
 }
 
 .this-page {
@@ -169,14 +171,11 @@ img {
     font-size: 14px;
 }
 
-p {
-    display: table; margin-left: auto; margin-right: auto; margin-top: 5px; margin-bottom: 5px; text-align: center;
-}
-
 .question > p {
     color: gray;
     font-size: 14px;
     font-weight: 600;
+    text-align: center;
 }
 
 .question > h1 {
@@ -184,8 +183,12 @@ p {
     font-weight: 700;
     text-align: center;
     width: 350px;
-    height: 60px;
+    height: 110px;
     margin-top: 10px;
+}
+
+.question > img {
+    width: 220px;
 }
 
 .loading > h1 {
@@ -197,14 +200,76 @@ p {
     margin-top: 20px;
 }
 
-.result > h1 {
+.result div:nth-child(1) {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
-    width: 350px;
-    height: 50px;
     margin-top: 20px;
 }
+
+.result-name {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.result-image > img {
+    width: 300px;
+}
+
+.result-description {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    padding: 10px;
+    text-align: left;
+}
+
+.result-hashtag {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-hashtag > span {
+    margin: 5px;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    height: 20px;
+    padding: 5px;
+}
+
+.result-advice {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    padding: 10px;
+}
+
+.result div:nth-child(7) {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.result div:nth-child(8) {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 
 button {
     border-radius: 18px;
@@ -242,11 +307,24 @@ button {
     color: white;
 }
 
+.result-button {
+    border-radius: 26px;
+    background-color: #4D7960;
+    border: #4D7960;
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 18px;
+    margin-bottom: 50px;
+    height: 60px;
+}
+
 .copyright {
     color: gray;
     font-size: 14px;
     margin-top: auto;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .question {
@@ -558,4 +636,29 @@ button {
 @keyframes a20{
     0%{width: 312.5px;}
     100%{width: 328px;}
+}
+
+.fa-link {
+    font-size: 20px;
+}
+
+.fa-instagram {
+    font-size: 20px;
+}
+
+.fa-facebook {
+    font-size: 20px;
+}
+
+#kakaoShare {
+    border: none;
+    background-color: inherit;
+    width: 20px;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#kakaoShare img {
+    width: 20px;
 }

@@ -240,3 +240,35 @@ startButton.addEventListener("click", start);
 // function sendData() {
 
 // }
+
+var shareLink = 'https://worktest1.netlify.app';
+
+Kakao.Link.createDefaultButton({
+  container: '#kakaoShare',
+  objectType: 'feed',
+  content: {
+    title: '제목 입력',
+    description: '내용 입력',
+    imageUrl: '대표 이미지 및 썸네일 입력',
+    link: {
+      webUrl: shareLink,
+      mobileWebUrl: shareLink
+    },
+  },
+  buttons: [
+    {
+      title: '테스트 하러 가기',
+      link: {
+        webUrl: shareLink,
+        mobileWebUrl: shareLink
+      }
+    },
+    {
+      title: '앱으로 보기',
+      link: {
+        webUrl: shareLink,
+        mobileWebUrl: shareLink
+      }
+    }
+  ]
+});
