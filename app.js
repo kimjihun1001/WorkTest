@@ -243,32 +243,35 @@ startButton.addEventListener("click", start);
 
 var shareLink = 'https://worktest1.netlify.app';
 
-Kakao.Link.createDefaultButton({
-  container: '#kakaoShare',
-  objectType: 'feed',
-  content: {
-    title: '제목 입력',
-    description: '내용 입력',
-    imageUrl: '대표 이미지 및 썸네일 입력',
-    link: {
-      webUrl: shareLink,
-      mobileWebUrl: shareLink
-    },
-  },
-  buttons: [
-    {
-      title: '테스트 하러 가기',
+Kakao.Link.sendDefault({
+    objectType: 'feed',
+    content: {
+      title: '디저트 사진',
+      description: '아메리카노, 빵, 케익',
+      imageUrl:
+        'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
       link: {
-        webUrl: shareLink,
-        mobileWebUrl: shareLink
-      }
+        mobileWebUrl: shareLink,
+        androidExecutionParams: 'test',
+      },
     },
-    {
-      title: '앱으로 보기',
-      link: {
-        webUrl: shareLink,
-        mobileWebUrl: shareLink
-      }
-    }
-  ]
-});
+    social: {
+      likeCount: 10,
+      commentCount: 20,
+      sharedCount: 30,
+    },
+    buttons: [
+      {
+        title: '웹으로 이동',
+        link: {
+          mobileWebUrl: shareLink,
+        },
+      },
+      {
+        title: '앱으로 이동',
+        link: {
+          mobileWebUrl: shareLink,
+        },
+      },
+    ]
+  });

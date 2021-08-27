@@ -650,15 +650,14 @@ button {
     font-size: 20px;
 }
 
-#kakaoShare {
+#kakao-link-btn {
     border: none;
     background-color: inherit;
     width: 20px;
-    display: inline;
     padding: 0;
     margin: 0;
 }
 
-#kakaoShare img {
+#kakao-link-btn img {
     width: 20px;
 }
