@@ -8,7 +8,51 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/40f3531a17.js" crossorigin="anonymous"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('e9ec399c2ab28a8741202b36a2bf37d7');
+
+        // SDK 초기화 여부를 판단합니다.
+        console.log(Kakao.isInitialized());
+    </script>
+    <script type="text/javascript">
+        Kakao.Link.createDefaultButton({
+          container: '#create-kakao-link-btn',
+          objectType: 'feed',
+          content: {
+            title: '딸기 치즈 케익',
+            description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+            imageUrl:
+              'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+            link: {
+              mobileWebUrl: 'https://developers.kakao.com',
+              webUrl: 'https://developers.kakao.com',
+            },
+          },
+          social: {
+            likeCount: 286,
+            commentCount: 45,
+            sharedCount: 845,
+          },
+          buttons: [
+            {
+              title: '웹으로 보기',
+              link: {
+                mobileWebUrl: 'https://developers.kakao.com',
+                webUrl: 'https://developers.kakao.com',
+              },
+            },
+            {
+              title: '앱으로 보기',
+              link: {
+                mobileWebUrl: 'https://developers.kakao.com',
+                webUrl: 'https://developers.kakao.com',
+              },
+            },
+          ],
+        })
+      </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Gowun+Batang:wght@400;700&display=swap');
     </style>
@@ -26,6 +70,11 @@
             <h1 class="title">나는 어떻게 일하고 있을까?</h1>
             <h2>하루 일과로 알아보는 업무 유형 테스트</h2>
             <button class="start-button">START</button>
+            <a id="create-kakao-link-btn" href="javascript:;">
+                <img
+                  src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                />
+              </a>
         </div>
         <div class="progress-bar hidden">
             <div class="outside" style="position: relative;">
@@ -303,16 +352,18 @@
             <div>
                 <p>친구에게 공유하기</p>
             </div>
-            <div>
+            <div class="share">
                 <i class="fas fa-link"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
-                <a id="kakao-link-btn" href="javascript:sendLink()">
-                    <img src="img/kakao_logo.png" />
-                </a>
+                <div class="kakao">
+                    <a id="kakao-link-btn" href="javascript:sendDefault()">
+                        <img src="img/kakao_logo.png"/>
+                    </a>
+                </div>
             </div>
             <div>
-                <button class="result-button" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
             </div>
             <div>
                 <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
@@ -387,10 +438,8 @@
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
                 <a id="kakao-link-btn" href="javascript:sendDefault()">
-                    <img
-                      src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-                    />
-                  </a>
+                    <img src="img/kakao_logo.png"/>
+                </a>
             </div>
             <div>
                 <button class="result-button" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>

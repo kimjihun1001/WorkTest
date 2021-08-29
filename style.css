@@ -39,14 +39,14 @@ time, mark, audio, video {
 .body2 {
     background-color: #EEEAC0;
     width: 375px;
-    height: 1650px;
+    height: 1465px;
     margin: auto;
     border: black 2px solid;
     font-family: 'Gothic A1', sans-serif;
 }
 
 .grid1 {
-    display: grid;ㄴ
+    display: grid;
     grid-template-columns: 375px;
     grid-template-rows: 100px 515px 35px;
 }
@@ -60,13 +60,13 @@ time, mark, audio, video {
 .grid3 {
     display: grid;
     grid-template-columns: 375px;
-    grid-template-rows: 1615px 35px;
+    grid-template-rows: 1430px 35px;
 }
 
 .result {
     display: grid;
     grid-template-columns: 350px;
-    grid-template-rows: 50px 50px 300px 250px 150px 300px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 75px 350px 250px 100px 230px 75px 50px 50px 100px 75px;
 }
 
 div {
@@ -220,21 +220,23 @@ img {
 
 .result-description {
     margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 12.5px;
+    margin-right: 12.5px;
     background-color: beige;
-    padding: 10px;
+    padding: 15px;
     text-align: left;
+    border-radius: 10px;
 }
 
 .result-hashtag {
     margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 12.5px;
+    margin-right: 12.5px;
     background-color: beige;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .result-hashtag > span {
@@ -248,10 +250,11 @@ img {
 
 .result-advice {
     margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 12.5px;
+    margin-right: 12.5px;
     background-color: beige;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .result div:nth-child(7) {
@@ -315,8 +318,11 @@ button {
     font-size: 24px;
     font-weight: 900;
     padding: 18px;
-    margin-bottom: 50px;
     height: 60px;
+}
+
+.re-test {
+    margin-top: 40px;
 }
 
 .copyright {
@@ -639,25 +645,40 @@ button {
 }
 
 .fa-link {
-    font-size: 20px;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-right: 7px;
+    margin-bottom: 5px;
 }
 
 .fa-instagram {
-    font-size: 20px;
+    font-size: 50px;
+    color: #D40440;
+    margin-left: 5px;
+    margin-right: 7px;
 }
 
 .fa-facebook {
-    font-size: 20px;
+    font-size: 40px;
+    color: #3A5693;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
-#kakao-link-btn {
-    border: none;
-    background-color: inherit;
-    width: 20px;
-    padding: 0;
-    margin: 0;
+.kakao {
+    width: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline;
 }
 
 #kakao-link-btn img {
-    width: 20px;
+    width: 45px;
+    display: inline;
+}
+
+.share {
+    display: flex;
+    align-items: flex-end;
 }
