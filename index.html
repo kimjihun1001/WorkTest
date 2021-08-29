@@ -16,42 +16,23 @@
         // SDK 초기화 여부를 판단합니다.
         console.log(Kakao.isInitialized());
     </script>
-    <script type="text/javascript">
-        Kakao.Link.createDefaultButton({
-          container: '#create-kakao-link-btn',
-          objectType: 'feed',
-          content: {
-            title: '딸기 치즈 케익',
-            description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-            imageUrl:
-              'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-            link: {
-              mobileWebUrl: 'https://developers.kakao.com',
-              webUrl: 'https://developers.kakao.com',
-            },
-          },
-          social: {
-            likeCount: 286,
-            commentCount: 45,
-            sharedCount: 845,
-          },
-          buttons: [
-            {
-              title: '웹으로 보기',
-              link: {
-                mobileWebUrl: 'https://developers.kakao.com',
-                webUrl: 'https://developers.kakao.com',
-              },
-            },
-            {
-              title: '앱으로 보기',
-              link: {
-                mobileWebUrl: 'https://developers.kakao.com',
-                webUrl: 'https://developers.kakao.com',
-              },
-            },
-          ],
-        })
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '877215602917414',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v11.0'
+          });
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
       </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Gowun+Batang:wght@400;700&display=swap');
@@ -75,6 +56,58 @@
                   src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
                 />
               </a>
+              <script type="text/javascript">
+                Kakao.Link.createDefaultButton({
+                  container: '#create-kakao-link-btn',
+                  objectType: 'feed',
+                  content: {
+                    title: '딸기 치즈 케익',
+                    description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+                    imageUrl:
+                      'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+                    link: {
+                      mobileWebUrl: 'https://developers.kakao.com',
+                      webUrl: 'https://developers.kakao.com',
+                    },
+                  },
+                  social: {
+                    likeCount: 286,
+                    commentCount: 45,
+                    sharedCount: 845,
+                  },
+                  buttons: [
+                    {
+                      title: '웹으로 보기',
+                      link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                        webUrl: 'https://developers.kakao.com',
+                      },
+                    },
+                    {
+                      title: '앱으로 보기',
+                      link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                        webUrl: 'https://developers.kakao.com',
+                      },
+                    },
+                  ],
+                })
+              </script>
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <!-- Your share button code -->
+            <div class="fb-share-button" 
+            data-href="https://www.your-domain.com/your-page.html" 
+            data-layout="button_count">
+            </div>
         </div>
         <div class="progress-bar hidden">
             <div class="outside" style="position: relative;">
@@ -356,11 +389,11 @@
                 <i class="fas fa-link"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
-                <div class="kakao">
+                <!-- <div class="kakao">
                     <a id="kakao-link-btn" href="javascript:sendDefault()">
                         <img src="img/kakao_logo.png"/>
                     </a>
-                </div>
+                </div> -->
             </div>
             <div>
                 <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
@@ -437,9 +470,9 @@
                 <i class="fas fa-link"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
-                <a id="kakao-link-btn" href="javascript:sendDefault()">
+                <!-- <a id="kakao-link-btn" href="javascript:sendDefault()">
                     <img src="img/kakao_logo.png"/>
-                </a>
+                </a> -->
             </div>
             <div>
                 <button class="result-button" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
