@@ -231,7 +231,7 @@
         </div>
         <div class="question 16-page hidden">
             <img src="img/question/16.png">
-            <p>18:00 PM</p>
+            <p id="white-time">18:00 PM</p>
             <h1>불금이다. 프로젝트가 끝난 뒤에는 TF팀<br>해산으로 각자의 부서로 돌아가기 전 같이<br>회식을 갔다. 술자리에서 나는 
             </h1>
             <button id="E" class="b" name="15">퇴근 후 일 얘기는 NONO! 퇴근 후에는 일에서 벗어나 회식자리를 즐긴다.
@@ -288,6 +288,7 @@
             <img class="loading" src="img/calc.gif">
             <!-- <button class="next-button">다음</button> -->
         </div>
+
         <!-- 장의존 스트레스즉각 워라밸 큰그림 -->
         <div class="result hidden">
             <div>
@@ -338,14 +339,14 @@
                     <i class="fas fa-link"></i>
                 </a>
                 <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
                 </a>
                 <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
                     <i class="fab fa-facebook"></i>
                 </a>
                 <a id="kakao-link-btn" href="javascript:sendLink()">
                     <img
-                      src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                      src="img/kakao_logo.png"
                     />
                 </a>
             </div>
@@ -356,176 +357,1017 @@
                 <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
             </div>
         </div>
-        <div class="result hidden">
-            <h1>장의존 스트레스즉각 워라밸 디테일</h1>
-            <img src="img/result/02.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
-        </div>
-        <div class="result hidden">
-            <h1>장의존 스트레스즉각 워라인 큰그림</h1>
-            <img src="img/result/03.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
-        </div>
-        <div class="result hidden">
-            <h1>장의존 스트레스즉각 워라인 디테일</h1>
-            <img src="img/result/04.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
-        </div>
-        <div class="result hidden">
-            <h1>장의존 스트레스절제 워라밸 큰그림</h1>
-            <img src="img/result/05.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
-        </div>
-
-        <!-- 장의존 스트레스절제 워라밸 디테일 -->
+        <!-- 장의존 스트레스즉각 워라밸 디테일 -->
         <div class="result hidden">
             <div>
                 당신은...
             </div>
-            <div>
-                <h1>딱딱 자잰듯한 계획러 자</h1>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
             </div>
-            <div>
-                <img src="img/result/01.png">
+            <div class="result-image">
+                <img src="img/result/02.png">
             </div>
-            <div>
-                <p>당신은 FM 그 자체! 정석대로, 원칙대로가 좋습니다.
-                    원리원칙을 따지기에 가끔은 일의 추진이 더뎌 보일 수도 있지만 그만큼 일에 꼼꼼합니다.
-                    쉬기 위해 자신을 절제하며 일합니다.
-                    스스로를 통제할 수 있는 규칙적인 일과 삶을 선호합니다. 이에 일의 순서가 어그러지면 스트레스를 받기 쉽습니다.</p>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
             </div>
-            <div>
-                <p>#중재자 #규칙루틴 중시 #사회지향적 #디테일</p>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
             </div>
-            <div>
-                <p>‘나 대화법’으로 동료에게 이렇게 말해보세요!</p>
-                <p>“나는 정해진 룰에 따라 꼼꼼하게 일합니다. 이러한 저에게 루틴이 명확한 일을 주시거나, 아니면 확 이끄는 리더가 되어주세요.”
-                    “쉬기 위해 일에 집중합니다. 그런데 주변 환경에 영향을 많이 받는 편이에요. 스트레스를 티를 안 내려 노력하지만 그만큼 다운될 수도 있어요. 집에서 잘 쉬고 오면 괜찮습니다.”</p>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
             </div>
             <div>
                 <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
             </div>
             <div>
-                <p>친구에게 공유하기 </p>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
             </div>
             <div>
-                <i class="fas fa-link"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <!-- <a id="kakao-link-btn" href="javascript:sendDefault()">
-                    <img src="img/kakao_logo.png"/>
-                </a> -->
-            </div>
-            <div>
-                <button class="result-button" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
             </div>
             <div>
                 <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
             </div>
         </div>
+
+        <!-- 장의존 스트레스즉각 워라인 큰그림 -->
         <div class="result hidden">
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>너한테 말 좀 붙혀도 될까?<br>풀</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/03.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 하고 있는 게 늘 많은 사람입니다. 똑똑하지만 일이 너무 많아 벼락치기를 자주 합니다.<br>
+                    내면은 사교적이고 상상력이 풍부한데, 일을 할 때에는 큰 동작, 많은 액션을 보이며 하다 보니 리더 같이 보입니다.<br>
+                    그러나 실제로는 수줍은 리더이니, 세부적으로 일을 실행하기 위해서는 누군가의 도움이 꼭 필요한 사람입니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #관계중심적
+                </span>
+                <span>
+                    #컨트롤러 필요
+                </span>
+                <span>
+                    #신중함
+                </span>
+                <span>
+                    #상상력 풍부
+                </span>
+                <span>
+                    #수줍은 리더
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 가끔 혼자 정신없을 수도 있어요. 하고 싶은 게 많아서 그래요. 내가 혼자 달려가다가 놓치지 않도록 많이 도와주세요.” <br>
+                    “가끔은 바쁘게 한 내 일과 생각을 들어주시면 좋을 거 같아요. 먼저 물어봐주시면 더 좋아요”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
+        </div>
+        <!-- 장의존 스트레스즉각 워라인 디테일 -->
+        <div class="result hidden">
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>내가 집중하고 싶은 것, 하고 싶은것만 !<br>형광펜</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/04.png">
+            </div>
+            <div class="result-description">
+                <p>당신 주변에는 사람도 많고, 일도 많습니다. 그래서인지 일의 텐션이 자주 오락가락합니다. 인싸인 듯 아티스트인 듯 모호하지만 매력적인 사람입니다. <br>
+                    한 가지 일에 집중을 잘하고, 전문성 향상에 늘 노력합니다. <br>
+                    일할 때에도 자신만의 세계가 있습니다. 이에 때로는 당신이 의도하지 않았지만 그 세계가 방해 받는 것이 싫은 티가 나서 주위 사람들이 눈치가 보이기도 합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #프로집중러
+                </span>
+                <span>
+                    #추진력 약함
+                </span>
+                <span>
+                    #한분야의 전문가
+                </span>
+                <span>
+                    #멀티불가
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 일 욕심은 많은데 여러 일을 동시에 하는 건 어려워해요. 그래서 일의 양이나 적합성에 따라 텐션이 오락가락한답니다.” <br>
+                    “가끔 내 생각 속에 잠겨 있는데 천천히 제 생각을 말할 수 있을 때까지 조금만 기다려주세요.” </p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
+        </div>
+        <!-- 장의존 스트레스절제 워라밸 큰그림 -->
+        <div class="result hidden">
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>시킨 것 그대로~ 일은 효율이지 효율~<br>복사기</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/05.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 가이드만 잘 준다면 일의 전체 맥락을 읽고 일관되게 추진이 가능한 사람입니다.
+                    당신이 일에서 중요한 건 효율성입니다. 빠른 시간 내에 결과를 도출할 수 있어 유능한 인재로 각인되어 있습니다.
+                    피드백의 영향을 많이 받지만 이를 잘 눌러 담다가 양분으로 삼아 더 좋은 결과물을 만들어 내기도 합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
+        </div>
+        <!-- 장의존 스트레스절제 워라밸 디테일 -->
+        <div class="result hidden">
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
+        </div>
+        <!-- <h1>장의존 스트레스절제 워라인 큰그림</h1> -->
+        <div class="result hidden">
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
+        </div>
             
-            <h1>딱딱 자잰듯한 계획러 자</h1>
-            <img src="img/result/06.png">
-            <p>당신은 FM 그 자체! 정석대로, 원칙대로가 좋습니다.
-                원리원칙을 따지기에 가끔은 일의 추진이 더뎌 보일 수도 있지만 그만큼 일에 꼼꼼합니다.
-                쉬기 위해 자신을 절제하며 일합니다.
-                스스로를 통제할 수 있는 규칙적인 일과 삶을 선호합니다. 이에 일의 순서가 어그러지면 스트레스를 받기 쉽습니다.</p>
-            <p>#중재자 #규칙루틴 중시 #사회지향적 #디테일</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
-        </div>
+        <!-- <h1>장의존 스트레스절제 워라인 디테일</h1> -->
         <div class="result hidden">
-            <h1>장의존 스트레스절제 워라인 큰그림</h1>
-            <img src="img/result/07.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+            
+        <!-- <h1>장독립 스트레스즉각 워라밸 큰그림</h1> -->
         <div class="result hidden">
-            <h1>장의존 스트레스절제 워라인 디테일</h1>
-            <img src="img/result/08.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+            
+        <!-- <h1>장독립 스트레스즉각 워라밸 디테일</h1> -->
         <div class="result hidden">
-            <h1>장독립 스트레스즉각 워라밸 큰그림</h1>
-            <img src="img/result/09.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+            
+        <!-- <h1>장독립 스트레스즉각 워라인 큰그림</h1> -->
         <div class="result hidden">
-            <h1>장독립 스트레스즉각 워라밸 디테일</h1>
-            <img src="img/result/10.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+            
+        <!-- <h1>장독립 스트레스즉각 워라인 디테일</h1> -->
         <div class="result hidden">
-            <h1>장독립 스트레스즉각 워라인 큰그림</h1>
-            <img src="img/result/11.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+            
+        <!-- <h1>장독립 스트레스절제 워라밸 큰그림</h1> -->
         <div class="result hidden">
-            <h1>장독립 스트레스즉각 워라인 디테일</h1>
-            <img src="img/result/12.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+           
+        <!-- <h1>장독립 스트레스절제 워라밸 디테일</h1> -->
         <div class="result hidden">
-            <h1>장독립 스트레스절제 워라밸 큰그림</h1>
-            <img src="img/result/13.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+           
+        <!-- <h1>장독립 스트레스절제 워라인 큰그림</h1> -->
         <div class="result hidden">
-            <h1>장독립 스트레스절제 워라밸 디테일</h1>
-            <img src="img/result/14.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
+            
+        <!-- <h1>장독립 스트레스절제 워라인 디테일</h1> -->
         <div class="result hidden">
-            <h1>장독립 스트레스절제 워라인 큰그림</h1>
-            <img src="img/result/15.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
-        </div>
-        <div class="result hidden">
-            <h1>장독립 스트레스절제 워라인 디테일</h1>
-            <img src="img/result/16.png">
-            <p>당신은 뭐뭐한 사람이군요</p>
-            <p>조언: 당신은 뭐뭐하는 게 좋겠어요</p>
-            <button>같이 일하기 좋은 사람</button>
-            <button>같이 일하기 어려운 사람</button>
+            <div>
+                당신은...
+            </div>
+            <div class="result-name">
+                <h1>일은 함께 해야 흥이 나는 법!<br>클립들</h1>
+            </div>
+            <div class="result-image">
+                <img src="img/result/02.png">
+            </div>
+            <div class="result-description">
+                <p>당신은 내 Feel 대로! 즐겁게 일하고 싶은 사람입니다. 그래서 Feel을 받지 않으면 일에 몰두가 잘 안 됩니다. <br>
+                    그러나 어쨌든 일이란 하기 싫은 부분, 어려운 부분도 있는 법! 이에 당신은 종종 일하다가 생각이 복잡해지곤 합니다. <br>
+                    하고 싶은 일에 즉각적으로 반응하고, 또 남을 도와주는 것도 좋아하며, 다른 사람의 평가에 민감합니다.</p>
+            </div>
+            <div class="result-hashtag">
+                <span>
+                    #호불호 강함
+                </span>
+                <span>
+                    #즉흥파
+                </span>
+                <span>
+                    #인싸
+                </span>
+                <span>
+                    #감정적지지 선호
+                </span>
+                <span>
+                    #리더보다 서포터
+                </span>
+            </div>
+            <div class="result-advice">
+                <p>‘나 대화법’으로<br>동료에게 이렇게 말해보세요!</p>
+                <p>“나는 Feel을 받으면 일이 잘 풀리는데 Feel이 안 오면 일이 안 되어요. 그래서 종종 일을 안 하고 사람들과 어울리는데 그때는 Feel이 안 올 때랍니다.” <br>
+                    “이런 나를 이해해주시고 조금만 천천히 기다려주세요ㅠㅠ. 사람들과 어울리다보면 Feel이 오기도 한답니다.”</p>
+            </div>
+            <div>
+                <p>나와 업무 스타일이 잘 맞는<br>사람을 찾고 싶다면?</p>
+            </div>
+            <div>
+                <p>친구에게 공유하기</p>
+            </div>
+            <div class="share">
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="img/kakao_logo.png"
+                    />
+                </a>
+            </div>
+            <div>
+                <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>
+            </div>
+            <div>
+                <button class="result-button" onclick="location.href='https://www.instagram.com/1meori'">일머리 인스타보러가기</button>
+            </div>
         </div>
 
         <!-- <input id="change" type="button" value="야간모드" onclick="

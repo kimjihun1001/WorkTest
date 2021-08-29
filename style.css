@@ -27,13 +27,16 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
 .body1 {
     background-color: #EEEAC0;
     width: 375px;
     height: 650px;
     margin: auto;
     border: black 2px solid;
-    font-family: 'Gothic A1', sans-serif;
 }
 
 .body2 {
@@ -42,7 +45,6 @@ time, mark, audio, video {
     height: 1465px;
     margin: auto;
     border: black 2px solid;
-    font-family: 'Gothic A1', sans-serif;
 }
 
 .grid1 {
@@ -176,6 +178,10 @@ img {
     font-size: 14px;
     font-weight: 600;
     text-align: center;
+}
+
+#white-time {
+    color: #ACB5BD;
 }
 
 .question > h1 {
@@ -644,31 +650,39 @@ button {
     100%{width: 328px;}
 }
 
+.share {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
 .fa-link {
     font-size: 40px;
+    color: #212529;
     margin-left: 5px;
-    margin-right: 7px;
+    margin-right: 15px;
     margin-bottom: 5px;
 }
 
-.fa-instagram {
-    font-size: 50px;
-    color: #D40440;
-    margin-left: 5px;
-    margin-right: 7px;
+.fa-twitter {
+    font-size: 40px;
+    color: #4D6EF5;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
 }
 
 .fa-facebook {
     font-size: 40px;
     color: #3A5693;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 5px;
 }
 
-.kakao {
+#kakao-link-btn {
     width: 45px;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-right: 5px;
     display: inline;
 }
@@ -678,7 +692,3 @@ button {
     display: inline;
 }
 
-.share {
-    display: flex;
-    align-items: flex-end;
-}

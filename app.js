@@ -276,49 +276,41 @@ startButton.addEventListener("click", start);
     let resultImage = document.querySelector(".result-image > img");
     console.log(resultImage);
     console.dir(resultImage);
+    let resultTitle = document.querySelector(".result-name > h1");
+    console.dir(resultTitle);
+    let resultDescription = document.querySelectorAll(".result-hashtag span");
+    console.log(resultDescription);
 
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '딸기 치즈 케익',
-        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        title: resultTitle.innerHTML,
+        description: resultDescription[0].innerText + resultDescription[1].innerText + resultDescription[2].innerText + resultDescription[3].innerText,
         imageUrl: resultImage.src,
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://worktest1.netlify.app',
+          webUrl: 'https://worktest1.netlify.app',
         },
-      },
-      social: {
-        likeCount: 286,
-        commentCount: 45,
-        sharedCount: 845,
       },
       buttons: [
         {
-          title: '웹으로 보기',
+          title: '테스트하러 가기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: 'https://worktest1.netlify.app',
+            webUrl: 'https://worktest1.netlify.app',
           },
-        },
-        {
-          title: '앱으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
-          },
-        },
+        }
       ],
     })
   }
 
 function shareTwitter() {
-    var sendText = "개발새발"; // 전달할 텍스트
-    var sendUrl = "devpad.tistory.com/"; // 전달할 URL
+    var sendText = "업무방식 테스트"; // 전달할 텍스트
+    var sendUrl = "https://worktest1.netlify.app"; // 전달할 URL
     window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
 }
 
 function shareFacebook() {
-    var sendUrl = "devpad.tistory.com/"; // 전달할 URL
+    var sendUrl = "https://worktest1.netlify.app"; // 전달할 URL
     window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
 }
