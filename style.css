@@ -42,7 +42,7 @@ body {
 .body2 {
     background-color: #EEEAC0;
     width: 375px;
-    height: 1465px;
+    height: 1515px;
     margin: auto;
     border: black 2px solid;
 }
@@ -62,13 +62,13 @@ body {
 .grid3 {
     display: grid;
     grid-template-columns: 375px;
-    grid-template-rows: 1430px 35px;
+    grid-template-rows: 1480px 35px;
 }
 
 .result {
     display: grid;
     grid-template-columns: 350px;
-    grid-template-rows: 50px 75px 350px 250px 100px 230px 75px 50px 50px 100px 75px;
+    grid-template-rows: 50px 75px 350px 250px 100px 280px 75px 50px 50px 100px 75px;
 }
 
 div {
@@ -261,6 +261,12 @@ img {
     background-color: beige;
     padding: 15px;
     border-radius: 10px;
+}
+
+.result-advice > p:nth-child(1) {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .result div:nth-child(7) {
@@ -692,3 +698,6 @@ button {
     display: inline;
 }
 
+.share > a {
+    cursor: pointer;
+}

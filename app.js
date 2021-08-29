@@ -272,6 +272,7 @@ startButton.addEventListener("click", start);
 //     ],
 //   })
 
+// 카카오톡 공유 기능
   function sendLink() {
     let resultImage = document.querySelector(".result-image > img");
     console.log(resultImage);
@@ -304,13 +305,30 @@ startButton.addEventListener("click", start);
     })
   }
 
+// 트위터 공유 기능
 function shareTwitter() {
     var sendText = "업무방식 테스트"; // 전달할 텍스트
     var sendUrl = "https://worktest1.netlify.app"; // 전달할 URL
     window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
 }
 
+// 페이스북 공유 기능
 function shareFacebook() {
     var sendUrl = "https://worktest1.netlify.app"; // 전달할 URL
     window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+}
+
+
+// 링크 복사 기능
+function clip(){
+
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL이 복사되었습니다.")
 }
