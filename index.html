@@ -51,63 +51,11 @@
             <h1 class="title">나는 어떻게 일하고 있을까?</h1>
             <h2>하루 일과로 알아보는 업무 유형 테스트</h2>
             <button class="start-button">START</button>
-            <a id="create-kakao-link-btn" href="javascript:;">
+            <!-- <a id="create-kakao-link-btn" href="javascript:;">
                 <img
                   src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
                 />
-              </a>
-              <script type="text/javascript">
-                Kakao.Link.createDefaultButton({
-                  container: '#create-kakao-link-btn',
-                  objectType: 'feed',
-                  content: {
-                    title: '딸기 치즈 케익',
-                    description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-                    imageUrl:
-                      'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-                    link: {
-                      mobileWebUrl: 'https://developers.kakao.com',
-                      webUrl: 'https://developers.kakao.com',
-                    },
-                  },
-                  social: {
-                    likeCount: 286,
-                    commentCount: 45,
-                    sharedCount: 845,
-                  },
-                  buttons: [
-                    {
-                      title: '웹으로 보기',
-                      link: {
-                        mobileWebUrl: 'https://developers.kakao.com',
-                        webUrl: 'https://developers.kakao.com',
-                      },
-                    },
-                    {
-                      title: '앱으로 보기',
-                      link: {
-                        mobileWebUrl: 'https://developers.kakao.com',
-                        webUrl: 'https://developers.kakao.com',
-                      },
-                    },
-                  ],
-                })
-              </script>
-            <!-- Load Facebook SDK for JavaScript -->
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
-            <!-- Your share button code -->
-            <div class="fb-share-button" 
-            data-href="https://www.your-domain.com/your-page.html" 
-            data-layout="button_count">
-            </div>
+            </a> -->
         </div>
         <div class="progress-bar hidden">
             <div class="outside" style="position: relative;">
@@ -386,14 +334,20 @@
                 <p>친구에게 공유하기</p>
             </div>
             <div class="share">
-                <i class="fas fa-link"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <!-- <div class="kakao">
-                    <a id="kakao-link-btn" href="javascript:sendDefault()">
-                        <img src="img/kakao_logo.png"/>
-                    </a>
-                </div> -->
+                <a href="">
+                    <i class="fas fa-link"></i>
+                </a>
+                <a id="btnTwitter" class="link-icon twitter" href="javascript:shareTwitter();">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a id="btnFacebook" class="link-icon facebook" href="javascript:shareFacebook();">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a id="kakao-link-btn" href="javascript:sendLink()">
+                    <img
+                      src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                    />
+                </a>
             </div>
             <div>
                 <button class="result-button re-test" onclick="location.href='https://worktest1.netlify.app'">테스트 다시하기</button>

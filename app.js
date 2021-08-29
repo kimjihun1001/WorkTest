@@ -241,37 +241,84 @@ startButton.addEventListener("click", start);
 
 // }
 
-var shareLink = 'https://worktest1.netlify.app';
-
-// Kakao.Link.sendDefault({
+// Kakao.Link.createDefaultButton({
+//     container: '#create-kakao-link-btn',
 //     objectType: 'feed',
 //     content: {
-//       title: '디저트 사진',
-//       description: '아메리카노, 빵, 케익',
+//       title: '딸기 치즈 케익',
+//       description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
 //       imageUrl:
-//         'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+//         'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
 //       link: {
-//         mobileWebUrl: shareLink,
-//         androidExecutionParams: 'test',
+//         mobileWebUrl: 'https://worktest1.netlify.com',
+//         webUrl: 'https://worktest1.netlify.com',
 //       },
-//     },
-//     social: {
-//       likeCount: 10,
-//       commentCount: 20,
-//       sharedCount: 30,
 //     },
 //     buttons: [
 //       {
-//         title: '웹으로 이동',
+//         title: '웹으로 보기',
 //         link: {
-//           mobileWebUrl: shareLink,
+//           mobileWebUrl: 'https://worktest1.netlify.com',
+//           webUrl: 'https://worktest1.netlify.com',
 //         },
 //       },
 //       {
-//         title: '앱으로 이동',
+//         title: '앱으로 보기',
 //         link: {
-//           mobileWebUrl: shareLink,
+//           mobileWebUrl: 'https://developers.kakao.com',
+//           webUrl: 'https://developers.kakao.com',
 //         },
 //       },
-//     ]
-//   });
+//     ],
+//   })
+
+  function sendLink() {
+    let resultImage = document.querySelector(".result-image > img");
+    console.log(resultImage);
+    console.dir(resultImage);
+
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        imageUrl: resultImage.src,
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+      ],
+    })
+  }
+
+function shareTwitter() {
+    var sendText = "개발새발"; // 전달할 텍스트
+    var sendUrl = "devpad.tistory.com/"; // 전달할 URL
+    window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
+}
+
+function shareFacebook() {
+    var sendUrl = "devpad.tistory.com/"; // 전달할 URL
+    window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+}
