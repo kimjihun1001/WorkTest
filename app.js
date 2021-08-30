@@ -162,6 +162,7 @@ for(let i = 0; i < ans.length; i++) {
 // }
 
 // 결과 DIV
+let resultPage = '';
 
 function showResult () {
     divLoading.classList.toggle("hidden");
@@ -175,28 +176,36 @@ function showResult () {
             if (E > F) {
                 if (G > H) {
                     divResult[0].classList.toggle("hidden");
+                    resultPage = 0;
                 } else {
                     divResult[1].classList.toggle("hidden");
+                    resultPage = 1;
                 }
             } else if (E < F) {
                 if (G > H) {
                     divResult[2].classList.toggle("hidden");
+                    resultPage = 2;
                 } else {
                     divResult[3].classList.toggle("hidden");
+                    resultPage = 3;
                 }
             } 
         } else if (C < D) {
             if (E > F) {
                 if (G > H) {
                     divResult[4].classList.toggle("hidden");
+                    resultPage = 4;
                 } else {
                     divResult[5].classList.toggle("hidden");
+                    resultPage = 5;
                 }
             } else if (E < F) {
                 if (G > H) {
                     divResult[6].classList.toggle("hidden");
+                    resultPage = 6;
                 } else {
                     divResult[7].classList.toggle("hidden");
+                    resultPage = 7;
                 }
             }
         }
@@ -205,28 +214,36 @@ function showResult () {
             if (E > F) {
                 if (G > H) {
                     divResult[8].classList.toggle("hidden");
+                    resultPage = 8;
                 } else {
                     divResult[9].classList.toggle("hidden");
+                    resultPage = 9;
                 }
             } else if (E < F) {
                 if (G > H) {
                     divResult[10].classList.toggle("hidden");
+                    resultPage = 10;
                 } else {
                     divResult[11].classList.toggle("hidden");
+                    resultPage = 11;
                 }
             } 
         } else if (C < D) {
             if (E > F) {
                 if (G > H) {
                     divResult[12].classList.toggle("hidden");
+                    resultPage = 12;
                 } else {
                     divResult[13].classList.toggle("hidden");
+                    resultPage = 13;
                 }
             } else if (E < F) {
                 if (G > H) {
                     divResult[14].classList.toggle("hidden");
+                    resultPage = 14;
                 } else {
                     divResult[15].classList.toggle("hidden");
+                    resultPage = 15;
                 }
             }
         }
@@ -274,19 +291,24 @@ startButton.addEventListener("click", start);
 
 // 카카오톡 공유 기능
   function sendLink() {
-    let resultImage = document.querySelector(".result-image > img");
-    console.log(resultImage);
-    console.dir(resultImage);
-    let resultTitle = document.querySelector(".result-name > h1");
-    console.dir(resultTitle);
-    let resultDescription = document.querySelectorAll(".result-hashtag span");
-    console.log(resultDescription);
+    let resultImages = document.querySelectorAll(".result-image > img");
+    console.log(resultImages);
+    console.dir(resultImages);
+    let resultTitles = document.querySelectorAll(".result-name > h1");
+    console.dir(resultTitles);
+    let resultHashtagGroups = document.querySelectorAll(".result-hashtag");
+    console.log(resultHashtagGroups);
+
+    let resultImage = resultImages[resultPage];
+    let resultTitle = resultTitles[resultPage];
+    let resultHashtagGroup = resultHashtagGroups[resultPage];
+    let resultHashtags = resultHashtagGroup.querySelectorAll("span");
 
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: resultTitle.innerHTML,
-        description: resultDescription[0].innerText + resultDescription[1].innerText + resultDescription[2].innerText + resultDescription[3].innerText,
+        title: resultTitle.innerText,
+        description: resultHashtags[0].innerText + resultHashtags[1].innerText + resultHashtags[2].innerText + resultHashtags[3].innerText,
         imageUrl: resultImage.src,
         link: {
           mobileWebUrl: 'https://worktest1.netlify.app',
