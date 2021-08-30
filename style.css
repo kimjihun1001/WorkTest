@@ -36,7 +36,7 @@ body {
     width: 375px;
     height: 650px;
     margin: auto;
-    border: black 2px solid;
+    /* border: black 2px solid; */
 }
 
 .body2 {
@@ -44,7 +44,7 @@ body {
     width: 375px;
     height: 1515px;
     margin: auto;
-    border: black 2px solid;
+    /* border: black 2px solid; */
 }
 
 .grid1 {
